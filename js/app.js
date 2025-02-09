@@ -14,7 +14,10 @@ let youwin = 0
 let noonewins = 0
 
 const resultDisplayEl = document.querySelector('#result-display');
+const resultDisplayEl1 = document.querySelector('#computer-pic');
+const resultDisplayEl2 = document.querySelector('#who-wins');
 const countDisplayEl = document.querySelector('#counts');
+
 
 
 // 2) Define the required constants:
@@ -97,12 +100,12 @@ function compare(){
 //    Clearly indicate who won
 
 function render(){
-    resultDisplayEl.textContent = `You Pick: ` + playerChoice + `The Computer Picked:`+ ' ' + ' ' +computerChoice + '. ' +msg;
-    countDisplayEl.textContent = 'Computers total Wins' + computerwins + 'Your tatol wins' + youwin + 'and Ties' + noonewins
+    resultDisplayEl.textContent = 'You Pick: ' + playerChoice +".";
+    resultDisplayEl1.textContent = 'The Computer Picked:'+ ' ' +computerChoice;
+    resultDisplayEl2.textContent = msg;
+    countDisplayEl.textContent = 'Computers Wins: ' + computerwins +' '+ 'Your Wins: ' + youwin +' '+ 'and Ties: ' + noonewins
 }
 
-
-// 
 
 
 
